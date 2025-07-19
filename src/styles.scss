@@ -1,0 +1,33 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.search-input {
+  width: 70vw;
+  padding: 5px;
+}
+
+.suggestion-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  max-height: 20vh;
+  overflow-y: auto;
+  width: 70vw;
+  padding: 5px;
+  margin: auto;
+  border: 1px solid black;
+
+  .suggestion-item {
+    display: block;
+    padding: 0.25rem;
+    background-color: white;
+    pointer-events: auto;
+
+    &:hover {
+      background-color: beige;
+      cursor: pointer;
+    }
+  }
+}
